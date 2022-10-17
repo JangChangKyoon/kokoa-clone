@@ -1,0 +1,47 @@
+/* display
+justify-content
+padding */
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+}
+
+/* 폰트크기 폰트굵기  */
+.screen-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* margin */
+.screen-header__icons span {
+  margin-left: 20px;
+}
+
+.red-alert-sup {
+  position: relative;
+}
+.red-alert {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  top: 50px;
+  border-radius: 5px;
+}
+
+.screen-header .fa-cog:hover {
+  animation: cogAni 0.3s infinite linear;
+  transform: rotateY(350deg);
+}
+
+@keyframes cogAni {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(350deg);
+  }
+}
